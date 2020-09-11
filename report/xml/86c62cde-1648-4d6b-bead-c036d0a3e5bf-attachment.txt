@@ -1,0 +1,8 @@
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:230 Starting new HTTP connection (1): 39.98.138.157:5000
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:442 http://39.98.138.157:5000 "POST /api/login HTTP/1.1" 200 82
+[32mINFO    [0m root:test_ruantong.py:32 resjson{
+    "code": "001",
+    "msg": "用户名或密码错误"
+}
+[32mINFO    [0m root:test_ruantong.py:38 slist为['msg']
+[32mINFO    [0m root:test_ruantong.py:41 s用户名或密码错误

@@ -1,0 +1,107 @@
+{
+  "uid" : "14b8b414a827271d",
+  "name" : "test_run[登录-post-http://39.98.138.157:5000/api/login-{\"content-type\": \"application/json\"}--{\"username\":\"admin\",\n\"password\":\"123456\"}-json-{\"httpstatus\":200,\n\"info.name\":\"admin\"}-loginvar1]",
+  "fullName" : "testcases.test_ruantong.TestRunTong#test_run",
+  "historyId" : "cb4dd7eaeaccb3f5b54676b45ec4095c",
+  "time" : {
+    "start" : 1599792617474,
+    "stop" : 1599792617644,
+    "duration" : 170
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "ce0281bf5cc6e77b",
+      "name" : "log",
+      "source" : "ce0281bf5cc6e77b.txt",
+      "type" : "text/plain",
+      "size" : 759
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcases"
+  }, {
+    "name" : "suite",
+    "value" : "test_ruantong"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestRunTong"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-F2QMTE6"
+  }, {
+    "name" : "thread",
+    "value" : "24360-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.test_ruantong"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "apiname",
+    "value" : "'登录'"
+  }, {
+    "name" : "data",
+    "value" : "'{\"username\":\"admin\",\n\"password\":\"123456\"}'"
+  }, {
+    "name" : "dependency",
+    "value" : "'loginvar'"
+  }, {
+    "name" : "expect",
+    "value" : "'{\"httpstatus\":200,\n\"info.name\":\"admin\"}'"
+  }, {
+    "name" : "header",
+    "value" : "'{\"content-type\": \"application/json\"}'"
+  }, {
+    "name" : "method",
+    "value" : "'post'"
+  }, {
+    "name" : "params",
+    "value" : "''"
+  }, {
+    "name" : "type",
+    "value" : "'json'"
+  }, {
+    "name" : "url",
+    "value" : "'http://39.98.138.157:5000/api/login'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "b3a6c511ffef670f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599792163910,
+        "stop" : 1599792164032,
+        "duration" : 122
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "14b8b414a827271d.json",
+  "parameterValues" : [ "'登录'", "'{\"username\":\"admin\",\n\"password\":\"123456\"}'", "'loginvar'", "'{\"httpstatus\":200,\n\"info.name\":\"admin\"}'", "'{\"content-type\": \"application/json\"}'", "'post'", "''", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+}

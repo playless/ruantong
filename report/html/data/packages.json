@@ -1,0 +1,399 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "testcases.test_ruantong",
+    "children" : [ {
+      "name" : "test_run[登录-post-http://39.98.138.157:5000/api/login-{\"content-type\": \"application/json\"}--{\"username\":\"dmin\",\n\"password\":\"123459\"}-json-{\"msg\":\"用户名或密码错误\"}-/]",
+      "uid" : "8eb221a70eef9684",
+      "parentUid" : "75699d3ac2cb52975a9f239f23510ec5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599730202132,
+        "stop" : 1599730202304,
+        "duration" : 172
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'登录'", "'{\"username\":\"dmin\",\n\"password\":\"123459\"}'", "'/'", "'{\"msg\":\"用户名或密码错误\"}'", "'{\"content-type\": \"application/json\"}'", "'post'", "''", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+    }, {
+      "name" : "test_run[登录-post-http://39.98.138.157:5000/api/login-{\"content-type\": \"application/json\"}--{\"username\":\"admin\",\n\"password\":\"123456\"}-json-{\"httpstatus\":200,\n\"info.name\":\"admin\"}-loginvar]",
+      "uid" : "35fa27ba799e6faf",
+      "parentUid" : "75699d3ac2cb52975a9f239f23510ec5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599730202338,
+        "stop" : 1599730202547,
+        "duration" : 209
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'登录'", "'{\"username\":\"admin\",\n\"password\":\"123456\"}'", "'loginvar'", "'{\"httpstatus\":200,\n\"info.name\":\"admin\"}'", "'{\"content-type\": \"application/json\"}'", "'post'", "''", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+    }, {
+      "name" : "test_run[登录-post-http://39.98.138.157:5000/api/login-{\"content-type\": \"application/json\"}--{\"username\":\"\",\n\"password\":\"123457\"}-json-{\"msg\":\"用户名或密码错误\"}-/]",
+      "uid" : "80a8c7a5422bd2e8",
+      "parentUid" : "75699d3ac2cb52975a9f239f23510ec5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599730202582,
+        "stop" : 1599730202739,
+        "duration" : 157
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'登录'", "'{\"username\":\"\",\n\"password\":\"123457\"}'", "'/'", "'{\"msg\":\"用户名或密码错误\"}'", "'{\"content-type\": \"application/json\"}'", "'post'", "''", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+    }, {
+      "name" : "test_run[登录-post-http://39.98.138.157:5000/api/login-{\"content-type\": \"application/json\"}--{\"username\":\"admin\",\n\"password\":\"\"}-json-{\"msg\":\"用户名或密码错误\"}-/]",
+      "uid" : "767dbee7f1afb099",
+      "parentUid" : "75699d3ac2cb52975a9f239f23510ec5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599730202777,
+        "stop" : 1599730203022,
+        "duration" : 245
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'登录'", "'{\"username\":\"admin\",\n\"password\":\"\"}'", "'/'", "'{\"msg\":\"用户名或密码错误\"}'", "'{\"content-type\": \"application/json\"}'", "'post'", "''", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+    }, {
+      "name" : "test_run[查询商品信息-get-http://39.98.138.157:5000/api/getproductinfo--{\"productid\":8888}---{\"httpstatus\":200}-productvar]",
+      "uid" : "c29ff5c647afbf71",
+      "parentUid" : "75699d3ac2cb52975a9f239f23510ec5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599730203064,
+        "stop" : 1599730203344,
+        "duration" : 280
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'查询商品信息'", "''", "'productvar'", "'{\"httpstatus\":200}'", "''", "'get'", "'{\"productid\":8888}'", "''", "'http://39.98.138.157:5000/api/getproductinfo'" ]
+    }, {
+      "name" : "test_run[查询 个人信息-get-http://39.98.138.157:5000/api/getuserinfo-{\"token\": \"$loginvar.token$\"}----{\"httpstatus\":200}-uservar]",
+      "uid" : "9fe9e291d324d210",
+      "parentUid" : "75699d3ac2cb52975a9f239f23510ec5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599730203386,
+        "stop" : 1599730203540,
+        "duration" : 154
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'查询 个人信息'", "''", "'uservar'", "'{\"httpstatus\":200}'", "'{\"token\": \"$loginvar.token$\"}'", "'get'", "''", "''", "'http://39.98.138.157:5000/api/getuserinfo'" ]
+    }, {
+      "name" : "test_run[加入购物车-post-http://39.98.138.157:5000/api/addcart-{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}--{\"userid\":$uservar.data[0].userid$,\n\"openid\":\"$uservar.data[0].openid$\",\n\"productid\":$productvar.data[0].productid$}-json-{\"httpstatus\":200}-/]",
+      "uid" : "6426dd78c56fedde",
+      "parentUid" : "75699d3ac2cb52975a9f239f23510ec5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599730203583,
+        "stop" : 1599730203752,
+        "duration" : 169
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'加入购物车'", "'{\"userid\":$uservar.data[0].userid$,\n\"openid\":\"$uservar.data[0].openid$\",\n\"productid\":$productvar.data[0].productid$}'", "'/'", "'{\"httpstatus\":200}'", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'post'", "''", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+    }, {
+      "name" : "test_run[自然人账号密码登录-post-https://xffp.zgshfp.com.cn/fp/uc10002-{\"Content-Type \":\"application/json;charset=utf-8\",\n\"C-Tenancy-Id\":\"009900000000\",\n\"C-Timestamp\":\"20200518101752326\",\n\"C-Business-Id\":\"2020042811384650220001027759PC48\",\n\"C-App-Id\":\"STM_APP_001\",\n\"referer\":\"https://xffp.zgshfp.com.cn\"\n\n}--{\n    \"txnCommCom\": {\n        \"txnIttChnlCgyCode\": \"2345678\",\n       \"tPageJump\":\"1\",\n       \"tRecInPage\":\"10\",\n        \"txnIttChnlId\": \"1\"\n    },\n    \"txnBodyCom\": {\n       \"loginNo\":\"fp_1595926491251_3148\",\n       \"loginPassword\":\"12345678\",\n       \"loginType\":\"AU01\",\n       \"acctType\":\"10\",\n       \"vcode\":\"\",\n       \"vcodeId\":\"2131\"\n    }\n}-json-{\"C-Response-Desc\":\"success\"}-uc1002]",
+      "uid" : "8b8d2af768a6cf08",
+      "parentUid" : "75699d3ac2cb52975a9f239f23510ec5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599730203791,
+        "stop" : 1599730204345,
+        "duration" : 554
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'自然人账号密码登录'", "'{\n    \"txnCommCom\": {\n        \"txnIttChnlCgyCode\": \"2345678\",\n       \"tPageJump\":\"1\",\n       \"tRecInPage\":\"10\",\n        \"txnIttChnlId\": \"1\"\n    },\n    \"txnBodyCom\": {\n       \"loginNo\":\"fp_1595926491251_3148\",\n       \"loginPassword\":\"12345678\",\n       \"loginType\":\"AU01\",\n       \"acctType\":\"10\",\n       \"vcode\":\"\",\n       \"vcodeId\":\"2131\"\n    }\n}'", "'uc1002'", "'{\"C-Response-Desc\":\"success\"}'", "'{\"Content-Type \":\"application/json;charset=utf-8\",\n\"C-Tenancy-Id\":\"009900000000\",\n\"C-Timestamp\":\"20200518101752326\",\n\"C-Business-Id\":\"2020042811384650220001027759PC48\",\n\"C-App-Id\":\"STM_APP_001\",\n\"referer\":\"https://xffp.zgshfp.com.cn\"\n\n}'", "'post'", "''", "'json'", "'https://xffp.zgshfp.com.cn/fp/uc10002'" ]
+    }, {
+      "name" : "test_run[自然人用户信息查询-post-https://xffp.zgshfp.com.cn/fp/uc10003-{\"Content-Type \":\"application/json;charset=utf-8\",\n\"C-Tenancy-Id\":\"009900000000\",\n\"C-Timestamp\":\"20200518101752326\",\n\"C-Business-Id\":\"2020042811384650220001027759PC48\",\n\"C-App-Id\":\"STM_APP_001\",\n\"C-Dynamic-Password-Foruser\":\"$uc1002.C-Response-Body.token$\",\n\"referer\":\"https://xffp.zgshfp.com.cn\"\n\n}--{\n    \"txnCommCom\": {\n        \"txnIttChnlCgyCode\": \"2345678\",\n       \"tPageJump\":\"1\",\n       \"tRecInPage\":\"10\",\n        \"txnIttChnlId\": \"1\"\n    },\n    \"txnBodyCom\": {\n       \n    }\n}-json-{\"C-Response-Desc\":\"success\"}-]",
+      "uid" : "16b02fe35e2fb0d4",
+      "parentUid" : "75699d3ac2cb52975a9f239f23510ec5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599730204380,
+        "stop" : 1599730205069,
+        "duration" : 689
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'自然人用户信息查询'", "'{\n    \"txnCommCom\": {\n        \"txnIttChnlCgyCode\": \"2345678\",\n       \"tPageJump\":\"1\",\n       \"tRecInPage\":\"10\",\n        \"txnIttChnlId\": \"1\"\n    },\n    \"txnBodyCom\": {\n       \n    }\n}'", "''", "'{\"C-Response-Desc\":\"success\"}'", "'{\"Content-Type \":\"application/json;charset=utf-8\",\n\"C-Tenancy-Id\":\"009900000000\",\n\"C-Timestamp\":\"20200518101752326\",\n\"C-Business-Id\":\"2020042811384650220001027759PC48\",\n\"C-App-Id\":\"STM_APP_001\",\n\"C-Dynamic-Password-Foruser\":\"$uc1002.C-Response-Body.token$\",\n\"referer\":\"https://xffp.zgshfp.com.cn\"\n\n}'", "'post'", "''", "'json'", "'https://xffp.zgshfp.com.cn/fp/uc10003'" ]
+    }, {
+      "name" : "test_run[积分明细查询-post-https://xffp.zgshfp.com.cn/fp/fsx04009-{\"Content-Type \":\"application/json;charset=utf-8\",\n\"C-Tenancy-Id\":\"009900000000\",\n\"C-Timestamp\":\"20200518101752326\",\n\"C-Business-Id\":\"2020042811384650220001027759PC48\",\n\"C-App-Id\":\"STM_APP_001\",\n\"C-Dynamic-Password-Foruser\":\"$uc1002.C-Response-Body.token$\",\n\"referer\":\"https://xffp.zgshfp.com.cn\"\n\n}--{\n    \"txnCommCom\": {\n        \"txnIttChnlCgyCode\": \"2345678\",\n       \"tPageJump\":\"1\",\n       \"tRecInPage\":\"10\",\n        \"txnIttChnlId\": \"1\"\n    },\n    \"txnBodyCom\": {\n     \"member_id\":\"866283A2B4119A8CE05320ECC480871D\"\n    }\n}-json-{\"C-Response-Desc\":\"success\",\"C-Response-Body.txnCommCom.tCurrTotalPage\":1,\n\"C-Response-Body.detail_list[0].total\":3}-/]",
+      "uid" : "44fcfb8c7ea9af40",
+      "parentUid" : "75699d3ac2cb52975a9f239f23510ec5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599730205127,
+        "stop" : 1599730205727,
+        "duration" : 600
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'积分明细查询'", "'{\n    \"txnCommCom\": {\n        \"txnIttChnlCgyCode\": \"2345678\",\n       \"tPageJump\":\"1\",\n       \"tRecInPage\":\"10\",\n        \"txnIttChnlId\": \"1\"\n    },\n    \"txnBodyCom\": {\n     \"member_id\":\"866283A2B4119A8CE05320ECC480871D\"\n    }\n}'", "'/'", "'{\"C-Response-Desc\":\"success\",\"C-Response-Body.txnCommCom.tCurrTotalPage\":1,\n\"C-Response-Body.detail_list[0].total\":3}'", "'{\"Content-Type \":\"application/json;charset=utf-8\",\n\"C-Tenancy-Id\":\"009900000000\",\n\"C-Timestamp\":\"20200518101752326\",\n\"C-Business-Id\":\"2020042811384650220001027759PC48\",\n\"C-App-Id\":\"STM_APP_001\",\n\"C-Dynamic-Password-Foruser\":\"$uc1002.C-Response-Body.token$\",\n\"referer\":\"https://xffp.zgshfp.com.cn\"\n\n}'", "'post'", "''", "'json'", "'https://xffp.zgshfp.com.cn/fp/fsx04009'" ]
+    }, {
+      "name" : "test_run[登录-post-http://39.98.138.157:5000/api/login-{\"content-type\": \"application/json\"}--{\"username\":\"dmin\",\n\"password\":\"123459\"}-json-{\"msg\":\"用户名或密码错误\"}-/0]",
+      "uid" : "8541765214eda6c1",
+      "parentUid" : "75699d3ac2cb52975a9f239f23510ec5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599792613733,
+        "stop" : 1599792613952,
+        "duration" : 219
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'登录'", "'{\"username\":\"dmin\",\n\"password\":\"123459\"}'", "'/'", "'{\"msg\":\"用户名或密码错误\"}'", "'{\"content-type\": \"application/json\"}'", "'post'", "''", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+    }, {
+      "name" : "test_run[登录-post-http://39.98.138.157:5000/api/login-{\"content-type\": \"application/json\"}--{\"username\":\"admin\",\n\"password\":\"123456\"}-json-{\"httpstatus\":200,\n\"info.name\":\"admin\"}-loginvar0]",
+      "uid" : "a44c959fab7ca09",
+      "parentUid" : "75699d3ac2cb52975a9f239f23510ec5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599792613984,
+        "stop" : 1599792614115,
+        "duration" : 131
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'登录'", "'{\"username\":\"admin\",\n\"password\":\"123456\"}'", "'loginvar'", "'{\"httpstatus\":200,\n\"info.name\":\"admin\"}'", "'{\"content-type\": \"application/json\"}'", "'post'", "''", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+    }, {
+      "name" : "test_run[登录-post-http://39.98.138.157:5000/api/login-{\"content-type\": \"application/json\"}--{\"username\":\"\",\n\"password\":\"123457\"}-json-{\"msg\":\"用户名或密码错误\"}-/0]",
+      "uid" : "51b94914ef558b86",
+      "parentUid" : "75699d3ac2cb52975a9f239f23510ec5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599792614149,
+        "stop" : 1599792614315,
+        "duration" : 166
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'登录'", "'{\"username\":\"\",\n\"password\":\"123457\"}'", "'/'", "'{\"msg\":\"用户名或密码错误\"}'", "'{\"content-type\": \"application/json\"}'", "'post'", "''", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+    }, {
+      "name" : "test_run[登录-post-http://39.98.138.157:5000/api/login-{\"content-type\": \"application/json\"}--{\"username\":\"admin\",\n\"password\":\"\"}-json-{\"msg\":\"用户名或密码错误\"}-/0]",
+      "uid" : "de067b2eecd08ab",
+      "parentUid" : "75699d3ac2cb52975a9f239f23510ec5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599792614349,
+        "stop" : 1599792614482,
+        "duration" : 133
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'登录'", "'{\"username\":\"admin\",\n\"password\":\"\"}'", "'/'", "'{\"msg\":\"用户名或密码错误\"}'", "'{\"content-type\": \"application/json\"}'", "'post'", "''", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+    }, {
+      "name" : "test_run[查询商品信息-get-http://39.98.138.157:5000/api/getproductinfo--{\"productid\":8888}---{\"httpstatus\":200}-productvar0]",
+      "uid" : "6bc4e99bc5d9c228",
+      "parentUid" : "75699d3ac2cb52975a9f239f23510ec5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599792614520,
+        "stop" : 1599792614684,
+        "duration" : 164
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'查询商品信息'", "''", "'productvar'", "'{\"httpstatus\":200}'", "''", "'get'", "'{\"productid\":8888}'", "''", "'http://39.98.138.157:5000/api/getproductinfo'" ]
+    }, {
+      "name" : "test_run[查询 个人信息-get-http://39.98.138.157:5000/api/getuserinfo-{\"token\": \"$loginvar.token$\"}----{\"httpstatus\":200}-uservar0]",
+      "uid" : "15221c705aa73537",
+      "parentUid" : "75699d3ac2cb52975a9f239f23510ec5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599792614725,
+        "stop" : 1599792614908,
+        "duration" : 183
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'查询 个人信息'", "''", "'uservar'", "'{\"httpstatus\":200}'", "'{\"token\": \"$loginvar.token$\"}'", "'get'", "''", "''", "'http://39.98.138.157:5000/api/getuserinfo'" ]
+    }, {
+      "name" : "test_run[加入购物车-post-http://39.98.138.157:5000/api/addcart-{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}--{\"userid\":$uservar.data[0].userid$,\n\"openid\":\"$uservar.data[0].openid$\",\n\"productid\":$productvar.data[0].productid$}-json-{\"httpstatus\":200}-/0]",
+      "uid" : "2d0a8e7876b401ec",
+      "parentUid" : "75699d3ac2cb52975a9f239f23510ec5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599792614945,
+        "stop" : 1599792615251,
+        "duration" : 306
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'加入购物车'", "'{\"userid\":$uservar.data[0].userid$,\n\"openid\":\"$uservar.data[0].openid$\",\n\"productid\":$productvar.data[0].productid$}'", "'/'", "'{\"httpstatus\":200}'", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'post'", "''", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+    }, {
+      "name" : "test_run[自然人账号密码登录-post-https://xffp.zgshfp.com.cn/fp/uc10002-{\"Content-Type \":\"application/json;charset=utf-8\",\n\"C-Tenancy-Id\":\"009900000000\",\n\"C-Timestamp\":\"20200518101752326\",\n\"C-Business-Id\":\"2020042811384650220001027759PC48\",\n\"C-App-Id\":\"STM_APP_001\",\n\"referer\":\"https://xffp.zgshfp.com.cn\"\n\n}--{\n    \"txnCommCom\": {\n        \"txnIttChnlCgyCode\": \"2345678\",\n       \"tPageJump\":\"1\",\n       \"tRecInPage\":\"10\",\n        \"txnIttChnlId\": \"1\"\n    },\n    \"txnBodyCom\": {\n       \"loginNo\":\"fp_1595926491251_3148\",\n       \"loginPassword\":\"12345678\",\n       \"loginType\":\"AU01\",\n       \"acctType\":\"10\",\n       \"vcode\":\"\",\n       \"vcodeId\":\"2131\"\n    }\n}-json-{\"C-Response-Desc\":\"success\"}-uc10020]",
+      "uid" : "42e07743d331db4c",
+      "parentUid" : "75699d3ac2cb52975a9f239f23510ec5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599792615289,
+        "stop" : 1599792616118,
+        "duration" : 829
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'自然人账号密码登录'", "'{\n    \"txnCommCom\": {\n        \"txnIttChnlCgyCode\": \"2345678\",\n       \"tPageJump\":\"1\",\n       \"tRecInPage\":\"10\",\n        \"txnIttChnlId\": \"1\"\n    },\n    \"txnBodyCom\": {\n       \"loginNo\":\"fp_1595926491251_3148\",\n       \"loginPassword\":\"12345678\",\n       \"loginType\":\"AU01\",\n       \"acctType\":\"10\",\n       \"vcode\":\"\",\n       \"vcodeId\":\"2131\"\n    }\n}'", "'uc1002'", "'{\"C-Response-Desc\":\"success\"}'", "'{\"Content-Type \":\"application/json;charset=utf-8\",\n\"C-Tenancy-Id\":\"009900000000\",\n\"C-Timestamp\":\"20200518101752326\",\n\"C-Business-Id\":\"2020042811384650220001027759PC48\",\n\"C-App-Id\":\"STM_APP_001\",\n\"referer\":\"https://xffp.zgshfp.com.cn\"\n\n}'", "'post'", "''", "'json'", "'https://xffp.zgshfp.com.cn/fp/uc10002'" ]
+    }, {
+      "name" : "test_run[自然人用户信息查询-post-https://xffp.zgshfp.com.cn/fp/uc10003-{\"Content-Type \":\"application/json;charset=utf-8\",\n\"C-Tenancy-Id\":\"009900000000\",\n\"C-Timestamp\":\"20200518101752326\",\n\"C-Business-Id\":\"2020042811384650220001027759PC48\",\n\"C-App-Id\":\"STM_APP_001\",\n\"C-Dynamic-Password-Foruser\":\"$uc1002.C-Response-Body.token$\",\n\"referer\":\"https://xffp.zgshfp.com.cn\"\n\n}--{\n    \"txnCommCom\": {\n        \"txnIttChnlCgyCode\": \"2345678\",\n       \"tPageJump\":\"1\",\n       \"tRecInPage\":\"10\",\n        \"txnIttChnlId\": \"1\"\n    },\n    \"txnBodyCom\": {\n       \n    }\n}-json-{\"C-Response-Desc\":\"success\"}-0]",
+      "uid" : "3068b19c02591167",
+      "parentUid" : "75699d3ac2cb52975a9f239f23510ec5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599792616165,
+        "stop" : 1599792616811,
+        "duration" : 646
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'自然人用户信息查询'", "'{\n    \"txnCommCom\": {\n        \"txnIttChnlCgyCode\": \"2345678\",\n       \"tPageJump\":\"1\",\n       \"tRecInPage\":\"10\",\n        \"txnIttChnlId\": \"1\"\n    },\n    \"txnBodyCom\": {\n       \n    }\n}'", "''", "'{\"C-Response-Desc\":\"success\"}'", "'{\"Content-Type \":\"application/json;charset=utf-8\",\n\"C-Tenancy-Id\":\"009900000000\",\n\"C-Timestamp\":\"20200518101752326\",\n\"C-Business-Id\":\"2020042811384650220001027759PC48\",\n\"C-App-Id\":\"STM_APP_001\",\n\"C-Dynamic-Password-Foruser\":\"$uc1002.C-Response-Body.token$\",\n\"referer\":\"https://xffp.zgshfp.com.cn\"\n\n}'", "'post'", "''", "'json'", "'https://xffp.zgshfp.com.cn/fp/uc10003'" ]
+    }, {
+      "name" : "test_run[积分明细查询-post-https://xffp.zgshfp.com.cn/fp/fsx04009-{\"Content-Type \":\"application/json;charset=utf-8\",\n\"C-Tenancy-Id\":\"009900000000\",\n\"C-Timestamp\":\"20200518101752326\",\n\"C-Business-Id\":\"2020042811384650220001027759PC48\",\n\"C-App-Id\":\"STM_APP_001\",\n\"C-Dynamic-Password-Foruser\":\"$uc1002.C-Response-Body.token$\",\n\"referer\":\"https://xffp.zgshfp.com.cn\"\n\n}--{\n    \"txnCommCom\": {\n        \"txnIttChnlCgyCode\": \"2345678\",\n       \"tPageJump\":\"1\",\n       \"tRecInPage\":\"10\",\n        \"txnIttChnlId\": \"1\"\n    },\n    \"txnBodyCom\": {\n     \"member_id\":\"866283A2B4119A8CE05320ECC480871D\"\n    }\n}-json-{\"C-Response-Desc\":\"success\",\"C-Response-Body.txnCommCom.tCurrTotalPage\":1,\n\"C-Response-Body.detail_list[0].total\":3}-/0]",
+      "uid" : "18ba1a08b49215a8",
+      "parentUid" : "75699d3ac2cb52975a9f239f23510ec5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599792616849,
+        "stop" : 1599792617287,
+        "duration" : 438
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'积分明细查询'", "'{\n    \"txnCommCom\": {\n        \"txnIttChnlCgyCode\": \"2345678\",\n       \"tPageJump\":\"1\",\n       \"tRecInPage\":\"10\",\n        \"txnIttChnlId\": \"1\"\n    },\n    \"txnBodyCom\": {\n     \"member_id\":\"866283A2B4119A8CE05320ECC480871D\"\n    }\n}'", "'/'", "'{\"C-Response-Desc\":\"success\",\"C-Response-Body.txnCommCom.tCurrTotalPage\":1,\n\"C-Response-Body.detail_list[0].total\":3}'", "'{\"Content-Type \":\"application/json;charset=utf-8\",\n\"C-Tenancy-Id\":\"009900000000\",\n\"C-Timestamp\":\"20200518101752326\",\n\"C-Business-Id\":\"2020042811384650220001027759PC48\",\n\"C-App-Id\":\"STM_APP_001\",\n\"C-Dynamic-Password-Foruser\":\"$uc1002.C-Response-Body.token$\",\n\"referer\":\"https://xffp.zgshfp.com.cn\"\n\n}'", "'post'", "''", "'json'", "'https://xffp.zgshfp.com.cn/fp/fsx04009'" ]
+    }, {
+      "name" : "test_run[登录-post-http://39.98.138.157:5000/api/login-{\"content-type\": \"application/json\"}--{\"username\":\"dmin\",\n\"password\":\"123459\"}-json-{\"msg\":\"用户名或密码错误\"}-/1]",
+      "uid" : "dc0b86e1f1a0b52d",
+      "parentUid" : "75699d3ac2cb52975a9f239f23510ec5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599792617319,
+        "stop" : 1599792617440,
+        "duration" : 121
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'登录'", "'{\"username\":\"dmin\",\n\"password\":\"123459\"}'", "'/'", "'{\"msg\":\"用户名或密码错误\"}'", "'{\"content-type\": \"application/json\"}'", "'post'", "''", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+    }, {
+      "name" : "test_run[登录-post-http://39.98.138.157:5000/api/login-{\"content-type\": \"application/json\"}--{\"username\":\"admin\",\n\"password\":\"123456\"}-json-{\"httpstatus\":200,\n\"info.name\":\"admin\"}-loginvar1]",
+      "uid" : "14b8b414a827271d",
+      "parentUid" : "75699d3ac2cb52975a9f239f23510ec5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599792617474,
+        "stop" : 1599792617644,
+        "duration" : 170
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'登录'", "'{\"username\":\"admin\",\n\"password\":\"123456\"}'", "'loginvar'", "'{\"httpstatus\":200,\n\"info.name\":\"admin\"}'", "'{\"content-type\": \"application/json\"}'", "'post'", "''", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+    }, {
+      "name" : "test_run[登录-post-http://39.98.138.157:5000/api/login-{\"content-type\": \"application/json\"}--{\"username\":\"\",\n\"password\":\"123457\"}-json-{\"msg\":\"用户名或密码错误\"}-/1]",
+      "uid" : "873180bdeed89bb",
+      "parentUid" : "75699d3ac2cb52975a9f239f23510ec5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599792617682,
+        "stop" : 1599792617828,
+        "duration" : 146
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'登录'", "'{\"username\":\"\",\n\"password\":\"123457\"}'", "'/'", "'{\"msg\":\"用户名或密码错误\"}'", "'{\"content-type\": \"application/json\"}'", "'post'", "''", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+    }, {
+      "name" : "test_run[登录-post-http://39.98.138.157:5000/api/login-{\"content-type\": \"application/json\"}--{\"username\":\"admin\",\n\"password\":\"\"}-json-{\"msg\":\"用户名或密码错误\"}-/1]",
+      "uid" : "3aa83b47bf16f6c3",
+      "parentUid" : "75699d3ac2cb52975a9f239f23510ec5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599792617865,
+        "stop" : 1599792617991,
+        "duration" : 126
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'登录'", "'{\"username\":\"admin\",\n\"password\":\"\"}'", "'/'", "'{\"msg\":\"用户名或密码错误\"}'", "'{\"content-type\": \"application/json\"}'", "'post'", "''", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+    }, {
+      "name" : "test_run[查询商品信息-get-http://39.98.138.157:5000/api/getproductinfo--{\"productid\":8888}---{\"httpstatus\":200}-productvar1]",
+      "uid" : "fff66d2a224ea643",
+      "parentUid" : "75699d3ac2cb52975a9f239f23510ec5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599792618030,
+        "stop" : 1599792618206,
+        "duration" : 176
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'查询商品信息'", "''", "'productvar'", "'{\"httpstatus\":200}'", "''", "'get'", "'{\"productid\":8888}'", "''", "'http://39.98.138.157:5000/api/getproductinfo'" ]
+    }, {
+      "name" : "test_run[查询 个人信息-get-http://39.98.138.157:5000/api/getuserinfo-{\"token\": \"$loginvar.token$\"}----{\"httpstatus\":200}-uservar1]",
+      "uid" : "c325ffe2371e70fb",
+      "parentUid" : "75699d3ac2cb52975a9f239f23510ec5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599792618245,
+        "stop" : 1599792618428,
+        "duration" : 183
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'查询 个人信息'", "''", "'uservar'", "'{\"httpstatus\":200}'", "'{\"token\": \"$loginvar.token$\"}'", "'get'", "''", "''", "'http://39.98.138.157:5000/api/getuserinfo'" ]
+    }, {
+      "name" : "test_run[加入购物车-post-http://39.98.138.157:5000/api/addcart-{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}--{\"userid\":$uservar.data[0].userid$,\n\"openid\":\"$uservar.data[0].openid$\",\n\"productid\":$productvar.data[0].productid$}-json-{\"httpstatus\":200}-/1]",
+      "uid" : "48e8ea6440779669",
+      "parentUid" : "75699d3ac2cb52975a9f239f23510ec5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599792618469,
+        "stop" : 1599792618589,
+        "duration" : 120
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'加入购物车'", "'{\"userid\":$uservar.data[0].userid$,\n\"openid\":\"$uservar.data[0].openid$\",\n\"productid\":$productvar.data[0].productid$}'", "'/'", "'{\"httpstatus\":200}'", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'post'", "''", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+    }, {
+      "name" : "test_run[自然人账号密码登录-post-https://xffp.zgshfp.com.cn/fp/uc10002-{\"Content-Type \":\"application/json;charset=utf-8\",\n\"C-Tenancy-Id\":\"009900000000\",\n\"C-Timestamp\":\"20200518101752326\",\n\"C-Business-Id\":\"2020042811384650220001027759PC48\",\n\"C-App-Id\":\"STM_APP_001\",\n\"referer\":\"https://xffp.zgshfp.com.cn\"\n\n}--{\n    \"txnCommCom\": {\n        \"txnIttChnlCgyCode\": \"2345678\",\n       \"tPageJump\":\"1\",\n       \"tRecInPage\":\"10\",\n        \"txnIttChnlId\": \"1\"\n    },\n    \"txnBodyCom\": {\n       \"loginNo\":\"fp_1595926491251_3148\",\n       \"loginPassword\":\"12345678\",\n       \"loginType\":\"AU01\",\n       \"acctType\":\"10\",\n       \"vcode\":\"\",\n       \"vcodeId\":\"2131\"\n    }\n}-json-{\"C-Response-Desc\":\"success\"}-uc10021]",
+      "uid" : "df9bf071579d2959",
+      "parentUid" : "75699d3ac2cb52975a9f239f23510ec5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599792618624,
+        "stop" : 1599792619097,
+        "duration" : 473
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'自然人账号密码登录'", "'{\n    \"txnCommCom\": {\n        \"txnIttChnlCgyCode\": \"2345678\",\n       \"tPageJump\":\"1\",\n       \"tRecInPage\":\"10\",\n        \"txnIttChnlId\": \"1\"\n    },\n    \"txnBodyCom\": {\n       \"loginNo\":\"fp_1595926491251_3148\",\n       \"loginPassword\":\"12345678\",\n       \"loginType\":\"AU01\",\n       \"acctType\":\"10\",\n       \"vcode\":\"\",\n       \"vcodeId\":\"2131\"\n    }\n}'", "'uc1002'", "'{\"C-Response-Desc\":\"success\"}'", "'{\"Content-Type \":\"application/json;charset=utf-8\",\n\"C-Tenancy-Id\":\"009900000000\",\n\"C-Timestamp\":\"20200518101752326\",\n\"C-Business-Id\":\"2020042811384650220001027759PC48\",\n\"C-App-Id\":\"STM_APP_001\",\n\"referer\":\"https://xffp.zgshfp.com.cn\"\n\n}'", "'post'", "''", "'json'", "'https://xffp.zgshfp.com.cn/fp/uc10002'" ]
+    }, {
+      "name" : "test_run[自然人用户信息查询-post-https://xffp.zgshfp.com.cn/fp/uc10003-{\"Content-Type \":\"application/json;charset=utf-8\",\n\"C-Tenancy-Id\":\"009900000000\",\n\"C-Timestamp\":\"20200518101752326\",\n\"C-Business-Id\":\"2020042811384650220001027759PC48\",\n\"C-App-Id\":\"STM_APP_001\",\n\"C-Dynamic-Password-Foruser\":\"$uc1002.C-Response-Body.token$\",\n\"referer\":\"https://xffp.zgshfp.com.cn\"\n\n}--{\n    \"txnCommCom\": {\n        \"txnIttChnlCgyCode\": \"2345678\",\n       \"tPageJump\":\"1\",\n       \"tRecInPage\":\"10\",\n        \"txnIttChnlId\": \"1\"\n    },\n    \"txnBodyCom\": {\n       \n    }\n}-json-{\"C-Response-Desc\":\"success\"}-1]",
+      "uid" : "b046ae2488041b64",
+      "parentUid" : "75699d3ac2cb52975a9f239f23510ec5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599792619130,
+        "stop" : 1599792619637,
+        "duration" : 507
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'自然人用户信息查询'", "'{\n    \"txnCommCom\": {\n        \"txnIttChnlCgyCode\": \"2345678\",\n       \"tPageJump\":\"1\",\n       \"tRecInPage\":\"10\",\n        \"txnIttChnlId\": \"1\"\n    },\n    \"txnBodyCom\": {\n       \n    }\n}'", "''", "'{\"C-Response-Desc\":\"success\"}'", "'{\"Content-Type \":\"application/json;charset=utf-8\",\n\"C-Tenancy-Id\":\"009900000000\",\n\"C-Timestamp\":\"20200518101752326\",\n\"C-Business-Id\":\"2020042811384650220001027759PC48\",\n\"C-App-Id\":\"STM_APP_001\",\n\"C-Dynamic-Password-Foruser\":\"$uc1002.C-Response-Body.token$\",\n\"referer\":\"https://xffp.zgshfp.com.cn\"\n\n}'", "'post'", "''", "'json'", "'https://xffp.zgshfp.com.cn/fp/uc10003'" ]
+    }, {
+      "name" : "test_run[积分明细查询-post-https://xffp.zgshfp.com.cn/fp/fsx04009-{\"Content-Type \":\"application/json;charset=utf-8\",\n\"C-Tenancy-Id\":\"009900000000\",\n\"C-Timestamp\":\"20200518101752326\",\n\"C-Business-Id\":\"2020042811384650220001027759PC48\",\n\"C-App-Id\":\"STM_APP_001\",\n\"C-Dynamic-Password-Foruser\":\"$uc1002.C-Response-Body.token$\",\n\"referer\":\"https://xffp.zgshfp.com.cn\"\n\n}--{\n    \"txnCommCom\": {\n        \"txnIttChnlCgyCode\": \"2345678\",\n       \"tPageJump\":\"1\",\n       \"tRecInPage\":\"10\",\n        \"txnIttChnlId\": \"1\"\n    },\n    \"txnBodyCom\": {\n     \"member_id\":\"866283A2B4119A8CE05320ECC480871D\"\n    }\n}-json-{\"C-Response-Desc\":\"success\",\"C-Response-Body.txnCommCom.tCurrTotalPage\":1,\n\"C-Response-Body.detail_list[0].total\":3}-/1]",
+      "uid" : "dfe92f2dce7fd824",
+      "parentUid" : "75699d3ac2cb52975a9f239f23510ec5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599792619691,
+        "stop" : 1599792620288,
+        "duration" : 597
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'积分明细查询'", "'{\n    \"txnCommCom\": {\n        \"txnIttChnlCgyCode\": \"2345678\",\n       \"tPageJump\":\"1\",\n       \"tRecInPage\":\"10\",\n        \"txnIttChnlId\": \"1\"\n    },\n    \"txnBodyCom\": {\n     \"member_id\":\"866283A2B4119A8CE05320ECC480871D\"\n    }\n}'", "'/'", "'{\"C-Response-Desc\":\"success\",\"C-Response-Body.txnCommCom.tCurrTotalPage\":1,\n\"C-Response-Body.detail_list[0].total\":3}'", "'{\"Content-Type \":\"application/json;charset=utf-8\",\n\"C-Tenancy-Id\":\"009900000000\",\n\"C-Timestamp\":\"20200518101752326\",\n\"C-Business-Id\":\"2020042811384650220001027759PC48\",\n\"C-App-Id\":\"STM_APP_001\",\n\"C-Dynamic-Password-Foruser\":\"$uc1002.C-Response-Body.token$\",\n\"referer\":\"https://xffp.zgshfp.com.cn\"\n\n}'", "'post'", "''", "'json'", "'https://xffp.zgshfp.com.cn/fp/fsx04009'" ]
+    } ],
+    "uid" : "testcases.test_ruantong"
+  } ]
+}

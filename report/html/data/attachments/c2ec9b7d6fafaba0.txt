@@ -1,0 +1,14 @@
+[32mINFO    [0m root:change.py:22 切片后的列表为['{"Content-Type ":"application/json;charset=utf-8",\n"C-Tenancy-Id":"009900000000",\n"C-Timestamp":"20200518101752326",\n"C-Business-Id":"2020042811384650220001027759PC48",\n"C-App-Id":"STM_APP_001",\n"C-Dynamic-Password-Foruser":"', 'uc1002.C-Response-Body.token', '",\n"referer":"https://xffp.zgshfp.com.cn"\n\n}']
+[32mINFO    [0m root:change.py:27 需要提取的 变量名var的值为uc1002.C-Response-Body.token
+[32mINFO    [0m root:change.py:29 提取的接口返回变量名为uc1002
+[32mINFO    [0m root:change.py:31 把提取的 变量名放到append字典中的值为{'loginvar': {'adress': {'city': 'changsha'}, 'httpstatus': 200, 'info': {'age': 18, 'name': 'admin'}, 'msg': 'success', 'token': '23657DGYUSGD126731638712GE18271H'}, 'productvar': {'data': [{'SKU': 'FRTSJ7676', 'price': 29.9, 'productdesc': '麒麟瓜皮薄瓜瓤嫩,就连翠衣也很清甜,瓤虽是粉红而不是深红,但甜度丝毫不减。', 'productid': 8888, 'productname': '海南麒麟瓜5斤装'}], 'httpstatus': 200}, 'uservar': {'data': [{'nikename': '风清扬', 'openid': 'UEHUXUXU78272SDSassDD', 'userbalance': 5678.9, 'userid': 17890, 'username': 'admin', 'userpoints': 4321}], 'httpstatus': 200}, 'uc1002': {'C-Response-Desc': 'success', 'C-API-Status': '00', 'C-Response-Body': '{"createtime":"2020-07-28 16:54:51","fingerInfo":{},"isSign":0,"token":"a5ace6591ced4528a47afdf9d7df1672","txnCommCom":{"tCurrTotalPage":1,"tCurrTotalRec":1,"totalPage":1,"totalRec":1},"userInfo":{"accFlag":"01","acctType":"10","centNum":3,"contactMobile":"18337634500","loginAccountId":"8c98a97476f44ab287ae560e54755b04","loginNo":"fp_1595926491251_3148","nickname":"fp_1595926491251_3148","pvtAccIdr":"0","pvtRdcCadrIdr":"0","registerTime":"2020-07-28 16:54:51","userRealLvl":"RC02"}}', 'C-Response-Code': '000000000000'}}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:943 Starting new HTTPS connection (1): xffp.zgshfp.com.cn:443
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:442 https://xffp.zgshfp.com.cn:443 "POST /fp/uc10003 HTTP/1.1" 200 None
+[32mINFO    [0m root:test_ruantong.py:32 resjson{
+    "C-Response-Desc": "success",
+    "C-API-Status": "00",
+    "C-Response-Body": "{\"createtime\":\"2020-07-28 16:54:51\",\"isSign\":0,\"txnCommCom\":{\"tCurrTotalPage\":1,\"tCurrTotalRec\":1,\"totalPage\":1,\"totalRec\":1},\"userInfo\":{\"accFlag\":\"01\",\"acctType\":\"10\",\"centNum\":3,\"contactMobile\":\"18337634500\",\"deviceId\":\"8c98a97476f44ab287ae560e54755b04_null\",\"loginAccountId\":\"8c98a97476f44ab287ae560e54755b04\",\"loginNo\":\"fp_1595926491251_3148\",\"nickname\":\"fp_1595926491251_3148\",\"pvtAccIdr\":\"0\",\"pvtRdcCadrIdr\":\"0\",\"registerTime\":\"2020-07-28 16:54:51\",\"sysMemberColmatterNum\":0,\"userRealLvl\":\"RC02\"}}",
+    "C-Response-Code": "000000000000"
+}
+[32mINFO    [0m root:test_ruantong.py:38 slist为['C-Response-Desc']
+[32mINFO    [0m root:test_ruantong.py:41 ssuccess

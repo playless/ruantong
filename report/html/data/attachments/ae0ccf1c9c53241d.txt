@@ -1,0 +1,10 @@
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:943 Starting new HTTPS connection (1): xffp.zgshfp.com.cn:443
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:442 https://xffp.zgshfp.com.cn:443 "POST /fp/uc10002 HTTP/1.1" 200 382
+[32mINFO    [0m root:test_ruantong.py:32 resjson{
+    "C-Response-Desc": "success",
+    "C-API-Status": "00",
+    "C-Response-Body": "{\"createtime\":\"2020-07-28 16:54:51\",\"fingerInfo\":{},\"isSign\":0,\"token\":\"9b113efac6af46758aee3c299169df5b\",\"txnCommCom\":{\"tCurrTotalPage\":1,\"tCurrTotalRec\":1,\"totalPage\":1,\"totalRec\":1},\"userInfo\":{\"accFlag\":\"01\",\"acctType\":\"10\",\"centNum\":3,\"contactMobile\":\"18337634500\",\"loginAccountId\":\"8c98a97476f44ab287ae560e54755b04\",\"loginNo\":\"fp_1595926491251_3148\",\"nickname\":\"fp_1595926491251_3148\",\"pvtAccIdr\":\"0\",\"pvtRdcCadrIdr\":\"0\",\"registerTime\":\"2020-07-28 16:54:51\",\"userRealLvl\":\"RC02\"}}",
+    "C-Response-Code": "000000000000"
+}
+[32mINFO    [0m root:test_ruantong.py:38 slist为['C-Response-Desc']
+[32mINFO    [0m root:test_ruantong.py:41 ssuccess

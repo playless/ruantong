@@ -1,0 +1,97 @@
+{
+  "uid" : "657253d587f852ca",
+  "name" : "test_run[自然人账号密码登录-post-https://xffp.zgshfp.com.cn/fp/uc10002-{\"Content-Type \":\"application/json;charset=utf-8\",\n\"C-Tenancy-Id\":\"009900000000\",\n\"C-Timestamp\":\"20200518101752326\",\n\"C-Business-Id\":\"2020042811384650220001027759PC48\",\n\"C-App-Id\":\"STM_APP_001\",\n\"referer\":\"https://xffp.zgshfp.com.cn\"\n\n}--{\n    \"txnCommCom\": {\n        \"txnIttChnlCgyCode\": \"2345678\",\n       \"tPageJump\":\"1\",\n       \"tRecInPage\":\"10\",\n        \"txnIttChnlId\": \"1\"\n    },\n    \"txnBodyCom\": {\n       \"loginNo\":\"fp_1595926491251_3148\",\n       \"loginPassword\":\"12345678\",\n       \"loginType\":\"AU01\",\n       \"acctType\":\"10\",\n       \"vcode\":\"\",\n       \"vcodeId\":\"2131\"\n    }\n}-json-{\"C-Response-Desc\":\"success\"}-uc10021]",
+  "fullName" : "testcases.test_ruantong.TestRunTong#test_run",
+  "historyId" : "aa24108e61e4429fd0ccd4548e0db703",
+  "time" : {
+    "start" : 1599792164969,
+    "stop" : 1599792165896,
+    "duration" : 927
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "394b69787bfe8b4a",
+      "name" : "log",
+      "source" : "394b69787bfe8b4a.txt",
+      "type" : "text/plain",
+      "size" : 1104
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcases"
+  }, {
+    "name" : "suite",
+    "value" : "test_ruantong"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestRunTong"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-F2QMTE6"
+  }, {
+    "name" : "thread",
+    "value" : "22240-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.test_ruantong"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "apiname",
+    "value" : "'自然人账号密码登录'"
+  }, {
+    "name" : "data",
+    "value" : "'{\n    \"txnCommCom\": {\n        \"txnIttChnlCgyCode\": \"2345678\",\n       \"tPageJump\":\"1\",\n       \"tRecInPage\":\"10\",\n        \"txnIttChnlId\": \"1\"\n    },\n    \"txnBodyCom\": {\n       \"loginNo\":\"fp_1595926491251_3148\",\n       \"loginPassword\":\"12345678\",\n       \"loginType\":\"AU01\",\n       \"acctType\":\"10\",\n       \"vcode\":\"\",\n       \"vcodeId\":\"2131\"\n    }\n}'"
+  }, {
+    "name" : "dependency",
+    "value" : "'uc1002'"
+  }, {
+    "name" : "expect",
+    "value" : "'{\"C-Response-Desc\":\"success\"}'"
+  }, {
+    "name" : "header",
+    "value" : "'{\"Content-Type \":\"application/json;charset=utf-8\",\n\"C-Tenancy-Id\":\"009900000000\",\n\"C-Timestamp\":\"20200518101752326\",\n\"C-Business-Id\":\"2020042811384650220001027759PC48\",\n\"C-App-Id\":\"STM_APP_001\",\n\"referer\":\"https://xffp.zgshfp.com.cn\"\n\n}'"
+  }, {
+    "name" : "method",
+    "value" : "'post'"
+  }, {
+    "name" : "params",
+    "value" : "''"
+  }, {
+    "name" : "type",
+    "value" : "'json'"
+  }, {
+    "name" : "url",
+    "value" : "'https://xffp.zgshfp.com.cn/fp/uc10002'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "657253d587f852ca.json",
+  "parameterValues" : [ "'自然人账号密码登录'", "'{\n    \"txnCommCom\": {\n        \"txnIttChnlCgyCode\": \"2345678\",\n       \"tPageJump\":\"1\",\n       \"tRecInPage\":\"10\",\n        \"txnIttChnlId\": \"1\"\n    },\n    \"txnBodyCom\": {\n       \"loginNo\":\"fp_1595926491251_3148\",\n       \"loginPassword\":\"12345678\",\n       \"loginType\":\"AU01\",\n       \"acctType\":\"10\",\n       \"vcode\":\"\",\n       \"vcodeId\":\"2131\"\n    }\n}'", "'uc1002'", "'{\"C-Response-Desc\":\"success\"}'", "'{\"Content-Type \":\"application/json;charset=utf-8\",\n\"C-Tenancy-Id\":\"009900000000\",\n\"C-Timestamp\":\"20200518101752326\",\n\"C-Business-Id\":\"2020042811384650220001027759PC48\",\n\"C-App-Id\":\"STM_APP_001\",\n\"referer\":\"https://xffp.zgshfp.com.cn\"\n\n}'", "'post'", "''", "'json'", "'https://xffp.zgshfp.com.cn/fp/uc10002'" ]
+}

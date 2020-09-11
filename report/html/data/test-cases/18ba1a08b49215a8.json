@@ -1,0 +1,107 @@
+{
+  "uid" : "18ba1a08b49215a8",
+  "name" : "test_run[积分明细查询-post-https://xffp.zgshfp.com.cn/fp/fsx04009-{\"Content-Type \":\"application/json;charset=utf-8\",\n\"C-Tenancy-Id\":\"009900000000\",\n\"C-Timestamp\":\"20200518101752326\",\n\"C-Business-Id\":\"2020042811384650220001027759PC48\",\n\"C-App-Id\":\"STM_APP_001\",\n\"C-Dynamic-Password-Foruser\":\"$uc1002.C-Response-Body.token$\",\n\"referer\":\"https://xffp.zgshfp.com.cn\"\n\n}--{\n    \"txnCommCom\": {\n        \"txnIttChnlCgyCode\": \"2345678\",\n       \"tPageJump\":\"1\",\n       \"tRecInPage\":\"10\",\n        \"txnIttChnlId\": \"1\"\n    },\n    \"txnBodyCom\": {\n     \"member_id\":\"866283A2B4119A8CE05320ECC480871D\"\n    }\n}-json-{\"C-Response-Desc\":\"success\",\"C-Response-Body.txnCommCom.tCurrTotalPage\":1,\n\"C-Response-Body.detail_list[0].total\":3}-/0]",
+  "fullName" : "testcases.test_ruantong.TestRunTong#test_run[积分明细查询-post-https://xffp.zgshfp.com.cn/fp/fsx04009-{\"Content-Type \":\"application/json;charset=utf-8\",\n\"C-Tenancy-Id\":\"009900000000\",\n\"C-Timestamp\":\"20200518101752326\",\n\"C-Business-Id\":\"2020042811384650220001027759PC48\",\n\"C-App-Id\":\"STM_APP_001\",\n\"C-Dynamic-Password-Foruser\":\"$uc1002.C-Response-Body.token$\",\n\"referer\":\"https://xffp.zgshfp.com.cn\"\n\n}--{\n    \"txnCommCom\": {\n        \"txnIttChnlCgyCode\": \"2345678\",\n       \"tPageJump\":\"1\",\n       \"tRecInPage\":\"10\",\n        \"txnIttChnlId\": \"1\"\n    },\n    \"txnBodyCom\": {\n     \"member_id\":\"866283A2B4119A8CE05320ECC480871D\"\n    }\n}-json-{\"C-Response-Desc\":\"success\",\"C-Response-Body.txnCommCom.tCurrTotalPage\":1,\n\"C-Response-Body.detail_list",
+  "historyId" : "9217ee473837a44d89a62bdffb65a0d1",
+  "time" : {
+    "start" : 1599792616849,
+    "stop" : 1599792617287,
+    "duration" : 438
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "ea625ee995bec8c6",
+      "name" : "log",
+      "source" : "ea625ee995bec8c6.txt",
+      "type" : "text/plain",
+      "size" : 3954
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcases"
+  }, {
+    "name" : "suite",
+    "value" : "test_ruantong"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestRunTong"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-F2QMTE6"
+  }, {
+    "name" : "thread",
+    "value" : "24360-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.test_ruantong"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "apiname",
+    "value" : "'积分明细查询'"
+  }, {
+    "name" : "data",
+    "value" : "'{\n    \"txnCommCom\": {\n        \"txnIttChnlCgyCode\": \"2345678\",\n       \"tPageJump\":\"1\",\n       \"tRecInPage\":\"10\",\n        \"txnIttChnlId\": \"1\"\n    },\n    \"txnBodyCom\": {\n     \"member_id\":\"866283A2B4119A8CE05320ECC480871D\"\n    }\n}'"
+  }, {
+    "name" : "dependency",
+    "value" : "'/'"
+  }, {
+    "name" : "expect",
+    "value" : "'{\"C-Response-Desc\":\"success\",\"C-Response-Body.txnCommCom.tCurrTotalPage\":1,\n\"C-Response-Body.detail_list[0].total\":3}'"
+  }, {
+    "name" : "header",
+    "value" : "'{\"Content-Type \":\"application/json;charset=utf-8\",\n\"C-Tenancy-Id\":\"009900000000\",\n\"C-Timestamp\":\"20200518101752326\",\n\"C-Business-Id\":\"2020042811384650220001027759PC48\",\n\"C-App-Id\":\"STM_APP_001\",\n\"C-Dynamic-Password-Foruser\":\"$uc1002.C-Response-Body.token$\",\n\"referer\":\"https://xffp.zgshfp.com.cn\"\n\n}'"
+  }, {
+    "name" : "method",
+    "value" : "'post'"
+  }, {
+    "name" : "params",
+    "value" : "''"
+  }, {
+    "name" : "type",
+    "value" : "'json'"
+  }, {
+    "name" : "url",
+    "value" : "'https://xffp.zgshfp.com.cn/fp/fsx04009'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "79fdb099c3329f4c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599792159492,
+        "stop" : 1599792163653,
+        "duration" : 4161
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "18ba1a08b49215a8.json",
+  "parameterValues" : [ "'积分明细查询'", "'{\n    \"txnCommCom\": {\n        \"txnIttChnlCgyCode\": \"2345678\",\n       \"tPageJump\":\"1\",\n       \"tRecInPage\":\"10\",\n        \"txnIttChnlId\": \"1\"\n    },\n    \"txnBodyCom\": {\n     \"member_id\":\"866283A2B4119A8CE05320ECC480871D\"\n    }\n}'", "'/'", "'{\"C-Response-Desc\":\"success\",\"C-Response-Body.txnCommCom.tCurrTotalPage\":1,\n\"C-Response-Body.detail_list[0].total\":3}'", "'{\"Content-Type \":\"application/json;charset=utf-8\",\n\"C-Tenancy-Id\":\"009900000000\",\n\"C-Timestamp\":\"20200518101752326\",\n\"C-Business-Id\":\"2020042811384650220001027759PC48\",\n\"C-App-Id\":\"STM_APP_001\",\n\"C-Dynamic-Password-Foruser\":\"$uc1002.C-Response-Body.token$\",\n\"referer\":\"https://xffp.zgshfp.com.cn\"\n\n}'", "'post'", "''", "'json'", "'https://xffp.zgshfp.com.cn/fp/fsx04009'" ]
+}
