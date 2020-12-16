@@ -1,0 +1,97 @@
+{
+  "uid" : "f762975b929d558e",
+  "name" : "test_run[登录-post-http://39.98.138.157:5000/api/login-{\"content-type\": \"application/json\"}--{\"username\":\"admin\",\n\"password\":\"\"}-json-{\"msg\":\"用户名或密码错误\"}-/0]",
+  "fullName" : "testcases.test_ruantong.TestRunTong#test_run",
+  "historyId" : "0ef3f649f378dccf9629aaa41f593655",
+  "time" : {
+    "start" : 1600065777946,
+    "stop" : 1600065778067,
+    "duration" : 121
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "68acc5323a788b57",
+      "name" : "log",
+      "source" : "68acc5323a788b57.txt",
+      "type" : "text/plain",
+      "size" : 477
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcases"
+  }, {
+    "name" : "suite",
+    "value" : "test_ruantong"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestRunTong"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-F2QMTE6"
+  }, {
+    "name" : "thread",
+    "value" : "12504-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.test_ruantong"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "apiname",
+    "value" : "'登录'"
+  }, {
+    "name" : "data",
+    "value" : "'{\"username\":\"admin\",\n\"password\":\"\"}'"
+  }, {
+    "name" : "dependency",
+    "value" : "'/'"
+  }, {
+    "name" : "expect",
+    "value" : "'{\"msg\":\"用户名或密码错误\"}'"
+  }, {
+    "name" : "header",
+    "value" : "'{\"content-type\": \"application/json\"}'"
+  }, {
+    "name" : "method",
+    "value" : "'post'"
+  }, {
+    "name" : "params",
+    "value" : "''"
+  }, {
+    "name" : "type",
+    "value" : "'json'"
+  }, {
+    "name" : "url",
+    "value" : "'http://39.98.138.157:5000/api/login'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f762975b929d558e.json",
+  "parameterValues" : [ "'登录'", "'{\"username\":\"admin\",\n\"password\":\"\"}'", "'/'", "'{\"msg\":\"用户名或密码错误\"}'", "'{\"content-type\": \"application/json\"}'", "'post'", "''", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+}
